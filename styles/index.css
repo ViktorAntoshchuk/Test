@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+:root {
+  --black: #1a1a1a;
+  --white: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--white);
+}
+
+.Logo span,
+.List li span,
+.BurgerMenu span {
+  font-size: 25px;
+}
+
+.Navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 3px solid var(--black);
+}
+
+.List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.List li,
+.List li a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.List li i,
+.List li a i {
+  font-size: 15px;
+}
+.List li:hover,
+.List li a:hover {
+  cursor: pointer;
+  color: orangered;
+}
+.List li:hover i,
+.List li:hover span,
+.List li a:hover i,
+.List li a:hover span {
+  color: inherit;
+}
+
+.Active i,
+.Active span {
+  color: orangered;
+}
+
+.Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Logo i {
+  font-size: 30px;
+}
+.Logo:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: orangered;
+}
+
+.BurgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  background-color: var(--white);
+  padding: 15px 25px;
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.BurgerMenu i {
+  font-size: 20px;
+}
+.BurgerMenu:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
